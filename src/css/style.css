@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--Light-pink) url(../images/background-pattern-desktop.svg)
+    no-repeat top / 100%;
+}
+
+.faq-card {
+  width: 60rem;
+  padding: 35px;
+  padding-bottom: 0;
+  background: var(--White);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-card .faq-title {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  font-size: 5rem;
+}
+
+.faq-card .faq-title::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 20px;
+  background: url(../images/icon-star.svg) no-repeat center;
+}
+
+.questions .question {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--Light-gray);
+}
+.questions .question:first-child {
+  padding-top: 0;
+}
+.questions .question:last-child {
+  padding-bottom: 40px;
+  border-bottom: none;
+}
+
+.question .question-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--Dark-purple);
+  transition: 0.3s ease-in-out;
+}
+.question .question-title:hover {
+  color: var(--Light-purple);
+}
+.question .question-title:active {
+  scale: 98%;
+}
+
+.question .question-text {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-top: 0;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--Grayish-purple);
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out,
+    padding-top 0.3s ease-in-out;
+}
+.question .question-text.show {
+  height: auto;
+  opacity: 1;
+  padding-top: 15px;
+}

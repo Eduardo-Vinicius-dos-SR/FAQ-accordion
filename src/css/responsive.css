@@ -1,0 +1,40 @@
+@media (max-width: 500px) {
+  .container {
+    background-image: url(../images/background-pattern-mobile.svg);
+    padding: 0 25px;
+  }
+
+  .container .faq-card {
+    width: 100%;
+    border-radius: 8px;
+    padding: 25px;
+  }
+
+  .faq-card .faq-title {
+    padding-bottom: 25px;
+    font-size: 3.2rem;
+  }
+  .faq-card .faq-title::before {
+    width: 25px;
+    height: 25px;
+    background-size: contain;
+  }
+  
+  .questions .question {
+    padding: 15px 0;
+  }
+  .questions .question:last-child {
+    padding-bottom: 0;
+  }
+
+  .question .question-title p {
+    margin-right: 20px;
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .question .question-text {
+    padding-bottom: 5px;
+    font-size: 1.4rem;
+  }
+}
